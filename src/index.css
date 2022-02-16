@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  body{
+    width: 100%;
+    min-height: 100vh;
+    background: #f1c9ec9d;
+  }
+  .app{
+    width: 1500px;
+    min-height: 800px;
+    position: absolute;
+    top:100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 13px rgba(231, 58, 58, 0.133),
+                -10px -10px 13px rgba(214, 31, 31, 0.467);
+  }
+  form{
+    margin: 50px;
+    height: 50px;
+    width: 10000%;
+  }
+  form input,
+  form button{
+    width: 400px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    padding: 0 5px;
+    font-size: 30px;
+    box-shadow: inset -5px -5px 5px rgba(221, 13, 23, 0.904),
+                inset 5px 5px 5px rgba(216, 15, 235, 0.133);
+  }
+  form button{
+    width: 100px;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow:  -5px -5px 5px rgb(240, 6, 6),
+                 5px 5px 5px rgb(224, 8, 231);
+  }
+  h1{
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #0905ecab;
+    margin-bottom: 20px;
+    text-shadow:  -3px -3px 3px rgba(48, 233, 233, 0.467),
+                 3px 3px 3px #0003;
+  }
+  ul li{
+    list-style: none;
+    margin: 20px 0;
+    padding: 20px;
+    text-transform: capitalize;
+    box-shadow:  -5px -5px 5px rgb(219, 26, 26),
+                 5px 5px 5px rgb(206, 29, 112);
+    animation: opacity 0.2s linear;
+    font-size: 30px;
+    text-align: center;
+  }
+  @keyframes opacity{
+    from{
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
+  ul li .row{
+    float: right;
+    
+  }
+  ul li .row i{
+    color: rgb(50, 47, 230);
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  ul li .row i:hover{
+    color: rgb(241, 38, 79);
+    font-size: 30px;
+    text-align: center;
+  }
+  .active{
+    animation: del 0.3s linear;
+  }
+  @keyframes del{
+    to{
+      opacity: 0;
+      transform: rotate(15deg) skew(25deg) scale(0.5);
+    }
+  }
+  h2{
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(8, 67, 155);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  ul li input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 50%;
+    font-size: 30px;
+    box-shadow: inset -2px -2px 2px rgba(218, 216, 228, 0.467),
+                inset 2px 2px 2px #0002;
+  }
